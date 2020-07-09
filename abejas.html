@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+ <!--iconos icon moon-->
+ <link rel="stylesheet" href="https://i.icomoon.io/public/temp/02bc5b5a24/UntitledProject/style.css">
+ <!--iconos materialize-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <!-- firestore -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAzPNUY4XqSkGkhdRw0mg7weHHHQoRGYjI",
+    authDomain: "sistema-apicola.firebaseapp.com",
+    databaseURL: "https://sistema-apicola.firebaseio.com",
+    projectId: "sistema-apicola",
+    storageBucket: "sistema-apicola.appspot.com",
+    messagingSenderId: "89045171873",
+    appId: "1:89045171873:web:fad2866c12a7abed42bae0",
+    measurementId: "G-69V3JF2W7E"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo black-text"><img class="responsive-img" width="170" src="/img/LOGO_APIARIO.png">
+    </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="black-text" href="abejas.html">Abejas</a></li>
+        <li><a class="black-text" href="contenedores.html">Contenedores</a></li>
+        <li><a class="black-text" href="derivados.html">Derivados</a></li>
+        <li><a class="black-text" href="personal.html">Personal</a></li>
+        <li><a class="black-text" href="ubicacion.html">Ubicación</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="abejas.html">Abejas</a></li>
+        <li><a href="contenedores.html">Contenedores</a></li>
+        <li><a href="derivados.html">Derivados</a></li>
+        <li><a href="personal.html">Personal</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+
+  <div class="row">
+    <div class="col s12"><p></p></div>
+
+    
+    <div class="col s12 m4 l4">
+        <div class="row">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                  <img src="/img/A_REINAA.png">
+                  <span class="card-title">Abeja Reina</span>
+                </div>
+                <div class="card-content">
+                  <p>Es la única hembra que llega a reproducirse en la colmena y solo hay una en cada colmena, es la única hembra fértil que pone huevos fecundados que dan origen a abejas obreras infértiles y pone huevos no fecundados que dan origen a zánganos fértiles.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="col s12 m4 l4">
+        <div class="row">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                  <img src="/img/A_OBRERA.png">
+                  <span class="card-title">Abeja Obrera</span>
+                </div>
+                <div class="card-content">
+                  <p>Todas son hembras y descendientes de la reina.
+                    Realizan diferentes tareas como la cera para construir su panal, limpian, alimentan, cuidan a sus crías y buscan flores para extraer de ellas tanto su néctar como el polen. Ellas son quienes fabrican la miel.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+    <div class="col s12 m4 l4">
+        <div class="row">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                  <img src="/img/A_ZANGANO.png">
+                  <span class="card-title">Abeja Zangano</span>
+                </div>
+                <div class="card-content">
+                  <p>Todos son machos y vuelan lejos para reproducirse con otras reinas jóvenes que iniciarán una nueva colonia,
+                    su única función es fecundar a la reina.
+                    <p>Se desarrollan en celdas más grandes que las obreras y proceden de huevos sin fecundar.</p>
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m6 l4">
+        <h3 class="blue-text text-light"><b>Abejas</b></h3> 
+        Las abejas son insectos voladores estrechamente vinculados a las avispas y las hormigas, y son conocidos por su papel en la polinización y por producir la miel y la cera de abejas.
+        <br>
+        Las abejas son un linaje monofilético dentro de la superfamilia Apoidea, del taxón Anthophila.
+        <br>
+        Existen casi 20.000 especies conocidas de abejas en en mundo y de siete a nueve familias reconocidas, aunque muchas no están descritas y el número real es probablemente más alto.
+        <br>
+        Se encuentran en todos los continentes excepto la Antártida, y en cada hábitat en el planeta que las plantas florecientes polinizadas por insectos
+        <br>
+        Estos insectos están adaptados para alimentarse de néctar y polen, el primero sobre todo como fuente de energía y el segundo principalmente para obtener proteínas y otros nutrientes.
+        <br>
+        La mayor parte del polen se utiliza como alimento para las larvas.
+    </div>
+
+    <div class="col s12 m6 l8" id="tabla">
+      <br>
+      <br>
+        <table>
+            <tr>
+              <td><b>Id abeja</b></td>
+              <td><b>Rol</b></td>
+              <td><b>Especie</b></td>
+              <td><b>Tamaño</b></td>
+              <td><b>Actualizar</b></td>
+              <td><b>Eliminar</b></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+          </table>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col s12 m6 l8">
+<h3 class="blue-text text-light"><b>Datos sorprendentes sobre las abejas</b></h3>
+
+<i class="material-icons">bubble_chart</i>
+Solamente siete, de las más de 20,000 especies de abejas, producen miel. Además, las abejas melíferas occidentales producen 1.6 millones de toneladas de miel cada año.<br>
+<i class="material-icons">bubble_chart</i>
+Una sola abeja melífera suele visitar unas 7,000 flores al día, y se necesitan cuatro millones de visitas para producir un kilo de miel.<br>
+<i class="material-icons">bubble_chart</i>
+Las margaritas son una excelente fue de alimento para las abejas polinizadoras porque florecen casi todo el año.<br>
+<i class="material-icons">bubble_chart</i>
+Más del 75 % de los cultivos alimentarios del mundo dependen en cierta medida de la polinización. Los polinizadores, como las abejas, mariposas, pájaros e incluso los murciélagos, ayudan a que las plantas se reproduzcan.<br>
+<i class="material-icons">bubble_chart</i>
+Los polinizadores no solo contribuyen directamente a la seguridad alimentaria, sino que además son indispensables para conservar la biodiversidad. Asimismo, sirven para alertarnos sobre los nuevos riesgos ambientales, indicando la salud de los ecosistemas locales.<br>
+<i class="material-icons">bubble_chart</i>
+Las abejas reinas pueden vivir hasta los seis años de edad. Sin embargo, con el paso del tiempo se va reduciendo su capacidad reproductiva.<br>
+<i class="material-icons">bubble_chart</i>
+Si la abeja reina muere, las obreras crearán una nueva reina escogiendo una larva joven, de entre los recién nacidos, y la alimentarán con un alimento especial llamado “jalea real”.<br>
+<i class="material-icons">bubble_chart</i>
+Estos insectos se orientan con el sol . Ya que, ajustan su brújula interna a los movimientos solares.<br>
+<i class="material-icons">bubble_chart</i>
+Cuando una abeja detecta alimento, avisa a sus compañeras con una especie de danza.<br>
+<i class="material-icons">bubble_chart</i>
+La abeja gigante, conocida por su nombre científico Megachile Pluto, tiene una envergadura estimada de 6 centímetros.<br>
+    </div>
+    
+    <div class="col s12 m6 l4">
+      <br><br>
+        <img class="responsive-img" width="380" src="/img/AABEJA.png">
+    </div>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <!-- script App.js -->
+  <script src="App.js"></script>
+
+  </body>
+</html>
